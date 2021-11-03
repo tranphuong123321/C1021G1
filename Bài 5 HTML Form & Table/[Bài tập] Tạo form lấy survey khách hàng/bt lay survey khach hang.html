@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="action_page.php" value="get">
+    <h2>Market Research Survey</h2>
+    <p>Please take a few moments to complete this satisfaction survey.</p>
+    <hr/>
+    <b>What is your age range?</b><br/>
+    <select name="age" id="age" style="width: 400px">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select><br/>
+    <b>What is your yearly income range?</b>><br/>
+    <select name="yearly income" id="yearly income" style="width: 400px">
+        <option value="&#36;0-&#36;25,000">&#36;0-&#36;25,000</option>
+        <option value="&#36;25,001-&#36;50,000">&#36;25,001-&#36;50,000</option>
+        <option value="&#36;50,001-&#36;100,000">&#36;50,001-&#36;100,000</option>
+        <option value="&#36;100,000+">&#36;100,000+</option>
+    </select><br/>
+    <b>Gender Identity</b><br/>
+    <label><input type="radio" name="hobby" value="Male">Male</label><br/>
+    <label><input type="radio" name="hobby" value="Female">Female</label><br/>
+    <label><input type="radio" name="hobby" value="Nonbinary">Nonbinary</label><br/>
+    <label><input type="radio" name="hobby" value="Other">Other</label><br/>
+    <input type="text"><br/>
+    <p style="font-size: 11px;margin-top: 0px;">
+        Maximum of <b>250</b> characters. Currently Used: <b>0</b> characters.
+    </p>
+    <b>Which of the following products have your purchased in the last 2 months. Please check all that apply.</b><br/>
+    <label><input type="checkbox" name="product" value="Product 1">Product 1</label><br/>
+    <label><input type="checkbox" name="product" value="Product 2">Product 2</label><br/>
+    <label><input type="checkbox" name="product" value="Product 3">Product 3</label><br/>
+    <b>How often would you use our new product?</b><br/>
+    <label><input type="radio" name="tansuat" value="Daily">Daily</label><br/>
+    <label><input type="radio" name="tansuat" value="Weekly">Weekly</label><br/>
+    <label><input type="radio" name="tansuat" value="Monthly">Monthly</label><br/>
+    <b>What would you pay for the new product?</b><br/>
+    &#36; <input type="text" size="5"/>.<input type="text" size="2"/>
+    <p style="font-size: 11px;margin-top: 0px">
+        DollarsCents
+    </p>
+    <b>What features would you like to see in the new product.</b><br/>
+    <textarea cols="100" ;rows="20"></textarea><br/>
+    Please rate your level of agreement with the following statements.
+    <table border="1">
+        <th>
+        <td>
+            <b>Strongly Disagree</b>
+        </td>
+        <td>
+            <b>Disagree</b>
+        </td>
+        <td>
+            <b>Agree</b>
+        </td>
+        <td>
+            <b>Strongly Agree</b>
+        </td>
+        </th>
+        <tr>
+            <td>
+                <b>Our products are priced fairly.</b>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>1</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Disagree"></label><br/>
+                <span>2</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Agree"></label><br/>
+                <span>3</span>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>4</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>Our products are high quality.</b>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>1</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Disagree"></label><br/>
+                <span>2</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Agree"></label><br/>
+                <span>3</span>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>4</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <b>You would recommend our product to a friend or coworker.</b>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>1</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Disagree"></label><br/>
+                <span>2</span>
+            </td>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Agree"></label><br/>
+                <span>3</span>
+            <td style="text-align: center">
+                <label><input type="radio" name="ff" value="Strongly Disagree"></label><br/>
+                <span>4</span>
+            </td>
+        </tr>
+    </table>
+    <br/>
+    <input type="submit" name="submit" value="Submit">
+</form>
+</body>
+</html>
