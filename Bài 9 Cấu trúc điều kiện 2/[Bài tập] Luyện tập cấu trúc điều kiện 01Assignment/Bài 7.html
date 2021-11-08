@@ -6,10 +6,18 @@
 </head>
 <body>
 <script>
-    let time = parseInt(prompt("Hay nhap thoi gian goi(don vi tinh bang giay)"))
-    let dongia= 200
-    let thanhtien=(time*dongia)
-    alert("Tong so tien la "+thanhtien+"VND")
+    let time = parseInt(prompt("Hay nhap thoi gian goi(don vi tinh bang phut)"))
+    let dongia1= 600
+    let dongia2= 400
+    let dongia3= 200
+    let ttbb=25000
+    if(time<=50){
+        alert(ttbb+dongia1*time)
+    }else if (time<=200){
+        alert(ttbb+50*dongia1+(time-50)*dongia2)
+    }else {
+        alert(ttbb+50*dongia1+150*dongia2+(time-200)*dongia3)
+    }
 </script>
 </body>
 </html>

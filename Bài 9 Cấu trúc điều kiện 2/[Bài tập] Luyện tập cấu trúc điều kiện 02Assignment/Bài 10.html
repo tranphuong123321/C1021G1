@@ -6,16 +6,15 @@
 </head>
 <body>
 <script>
-    let chu =parseInt(prompt("Hay nhap chu dien"))
-    let donGia1 =parseInt(1600)
-    let donGia2 =parseInt(1700)
-    let donGia3 =parseInt(1800)
-    if(chu<=50){
-        alert("Tổng số tiền là "+chu*donGia1+" VND")
-    }else  if(chu<=100){
-        alert("Tổng số tiền là "+50*donGia1+(chu-50)*donGia2+" VND")
+    let chu = parseInt(prompt("Hay nhap chu dien"));
+    if (chu <= 100) {
+        alert("Tổng số tiền là " + chu * 1000 + " VND");
+    } else if (chu<=150){
+        alert("Tổng số tiền là "+(100*1000+(chu-100)*2000)+" VND")
+    }else if (chu<=200){
+        alert("Tổng số tiền là "+(100*1000+50*2000+(chu-150)*2500)+" VND")
     }else {
-        alert(50*donGia1+50*donGia2+(chu-100)*donGia3+" VND")
+        alert("Tổng số tiền là "+(100*1000+50*2000+50*2500+(chu-200)*3000)+" VND")
     }
 </script>
 </body>
