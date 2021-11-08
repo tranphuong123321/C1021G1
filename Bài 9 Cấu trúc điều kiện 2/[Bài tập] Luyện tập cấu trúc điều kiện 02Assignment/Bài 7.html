@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>giải pt bậc 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Hay nhap so a"))
+    let b = parseInt(prompt("Hay nhap so b"))
+    let c = parseInt(prompt("Hay nhap so c"))
+    let delta = parseFloat(b * b - 4 * a * c)
+    let n1 = parseFloat((-b + Math.sqrt(delta)) / 2 * a)
+    let n2 = parseFloat((-b - Math.sqrt(delta)) / 2 * a)
+    if (a !== 0) {
+        if (delta < 0) {
+            alert("phuong trinh vo nghiem")
+        } else if (delta === 0) {
+            alert("phuong trinh co nghiem kep x1=x2= " + -b / 2 * a)
+        } else {
+            alert("phuong trinh co 2 nghiem x1 = " + n1 + " va x2 = " + n2)
+        }
+    }else{
+        alert("phuong trinh co nghiem x= "+ (-c/b))
+    }
+
+</script>
+</body>
+</html>
