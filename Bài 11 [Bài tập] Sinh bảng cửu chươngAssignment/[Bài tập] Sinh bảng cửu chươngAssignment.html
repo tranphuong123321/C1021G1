@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a
+    a = "<table border='1' width='100%'>"
+    for( i = 1;i<=9;i++){
+        a = a +"<tr>";
+        for (j = 1;j<=8;j++){
+            a = a +"<td>"+(j+1)+"x"+i+"="+(j+1)*i+ "</td>";
+        }
+        a = a + "</tr>";
+    }
+    a = a +"</table>";
+    document.write(a);
+</script>
+</body>
+</html>
