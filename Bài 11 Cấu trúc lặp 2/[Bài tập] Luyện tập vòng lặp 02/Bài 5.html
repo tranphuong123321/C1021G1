@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập</title>
+</head>
+<body>
+<script>
+    let sothanggui = parseInt(prompt('Số tháng cho vay'));
+    let laisuat = 0;
+    let sotiengui = parseInt(prompt('Nhập số tiền gửi'));
+    if (sothanggui < 6) {
+        laisuat = (0.5 / 100) * sotiengui;
+        alert('Lãi suất gửi gói 5 tháng là : ' + laisuat)
+    } else if (sothanggui < 12) {
+        laisuat = (0.4 / 100) * sotiengui;
+        alert('Lãi suất gửi gói 10 tháng là : ' + laisuat)
+    } else if (sothanggui < 24) {
+        laisuat = (0.3 / 100) * sotiengui;
+        alert('Lãi suất gửi gói 24 tháng là : ' + laisuat)
+    } else {
+        laisuat = (0.2 / 100) * sotiengui;
+        alert('Lãi suất gửi gói sau 24 tháng là : ' + laisuat)
+    }
+</script>
+</body>
+</html>
