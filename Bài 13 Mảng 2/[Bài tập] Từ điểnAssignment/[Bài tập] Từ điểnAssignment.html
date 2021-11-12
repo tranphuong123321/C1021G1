@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Enter the word to find:");
+    let a = ["con chó","con mèo","sư tử", "con người"];
+    let b = ["dog","cat","lion","human"];
+    let bln = false; let position;
+    for (let i=0; i<b.length; i++) {
+        if (str == b[i]) {
+            bln = true; position = i; } }
+    if (bln==true) alert(a[position]); else alert("Not found!");
+</script>
+</body>
+</html>

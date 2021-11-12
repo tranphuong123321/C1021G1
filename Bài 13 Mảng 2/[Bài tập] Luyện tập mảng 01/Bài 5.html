@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi = '-1 Trần Phương 1 3 4 5 -4 -5 -6 8 ';
+    document.write("Chuỗi cho trước : "+chuoi +"<br>");
+    let newChuoi = chuoi.split(' ');
+    let numbers = [];
+    let dem = 0;
+    for(let i = 0; i < newChuoi.length; i++){
+        let check = parseInt(newChuoi[i]);
+
+        if(isNaN(check)){
+            continue;
+        }else{
+            numbers.push(check);
+        }
+
+    }
+
+    for(let i = 0; i< numbers.length;i++){
+        if(numbers[i]<0){
+            dem++;
+        }
+    }
+    document.write("Số nguyên âm có trong chuỗi là " + dem +" số");
+</script>
+</body>
+</html>

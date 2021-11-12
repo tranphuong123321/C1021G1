@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let number = prompt("nhập số bạn muốn :");
+        let str = number.toString();
+        let giaTri = [str[0]];
+        let x;
+        for (x = 0; x < str.length; x++) {
+            if ((str[x] % 2 === 0) && (str[x + 1] % 2 === 0)) {
+                giaTri.push("-", str[x]);
+            } else {
+                giaTri.push(str[x]);
+            }
+        }
+        document.write(giaTri.join("-"));
+    </script>
+    </body>
+</html>

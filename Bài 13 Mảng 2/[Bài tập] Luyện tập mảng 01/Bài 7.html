@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write('<h5 style="text-align:center;color:green">Xóa phần tử trong mảng</h5>')
+
+    let arrays = new Array(6,11,2,20,18,19,22,45,16,27);
+    document.write("Mảng cho trước: "+arrays);
+    let V = parseInt(prompt("Nhập vào số muốn xóa"));
+    document.write("<br>Số nhập vào để xóa là: "+V);
+    let check = arrays.indexOf(V);
+    if(check !== -1){
+        for(let i = check; i < arrays.length;i++){
+            arrays[i] = arrays[i + 1];
+        }
+        arrays[arrays.length - 1] = 0;
+        document.write("<br>Mảng có được sau khi xóa: "+arrays);
+    }else{
+        document.write('<br>Không tồn tại số đã nhập trong mảng...Không thể thực hiện xóa phần tử');
+    }
+
+</script>
+</body>
+</html>
