@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = ['a','b','c', 1,2,3,4,5,6,'x','y','z'];
+    let dem = 0;
+    document.write('Mảng được khởi tạo:'+mang+'<br/>');
+    document.write('Kích thước của mảng là: '+mang.length)
+    for(let i = 0; i< mang.length;i++){
+
+        if(typeof(mang[i])==='number'){
+            dem++;
+        }
+    }
+    document.write('<br>Số phần tử là số có ở trong mảng là : '+dem);
+</script>
+</body>
+</html>

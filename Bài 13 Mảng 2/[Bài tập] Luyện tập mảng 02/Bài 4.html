@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    let chuoi = 'nay bạn ăn gì 1 2 3 4 5';
+    document.write('Chuỗi cho trước: "'+chuoi+'"<br>')
+    let dem=0;
+    let newChuoi=chuoi.split(" ");
+    for(let i = 0;i<newChuoi.length;i++){
+        let check = parseInt(newChuoi[i]);
+        if(isNaN(check)){
+            dem+= newChuoi[i].length;
+        }
+    }
+    document.write('Số ký tự trong chuỗi là: '+dem);
+
+
+</script>
+</body>
+</html>

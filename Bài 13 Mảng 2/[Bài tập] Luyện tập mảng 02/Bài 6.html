@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function changeWord(params) {
+        document.write('Mảng cho trước: ' + params+'<br>');
+        let newArray = [];
+        for (let i = 0; i < params.length; i++) {
+            let a = (params[i].toString().replaceAll('-', '_'));
+            newArray.push(a);
+        }
+        document.write('Mảng sau khi kiểm tra: ' + newArray);
+    }
+    let input = prompt('Nhập kí tự vào đây');
+    changeWord([input]);
+</script>
+</body>
+</html>
