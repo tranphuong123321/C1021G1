@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Số lần xuất hiện của ký tự là:<span id ='t1'></span>
+<script>
+    function searchWord(array,word){
+        let dem = 0;
+        for(let i = 0; i < array.length;i++){
+            if(array[i] === word){
+                dem = dem + 1;
+            }
+        }
+        return dem;
+    }
+    document.getElementById('t1').innerHTML= searchWord(['b','a','a','c','e','f','c','a','a'],'f')
+</script>
+</body>
+</html>

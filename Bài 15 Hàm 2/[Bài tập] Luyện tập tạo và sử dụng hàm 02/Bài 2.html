@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Diện tích hình tròn là: <span id='t1'></span><br/>
+Chu vi hình tròn là: <span id='t2'></span>
+<script>
+    function dientichHinhtron(r) {
+        return r * r * 3.14
+    }
+    document.getElementById('t1').innerHTML = dientichHinhtron(5)
+    function chuviHinhtron(r) {
+        return r * 2 * 3.14
+    }
+    document.getElementById('t2').innerHTML = chuviHinhtron(6)
+
+</script>
+</body>
+</html>

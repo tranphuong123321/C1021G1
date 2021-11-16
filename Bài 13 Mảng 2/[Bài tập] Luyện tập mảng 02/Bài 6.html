@@ -6,16 +6,16 @@
 </head>
 <body>
 <script>
+    let input = prompt('Nhập kí tự vào đây');
     function changeWord(params) {
         document.write('Mảng cho trước: ' + params+'<br>');
         let newArray = [];
         for (let i = 0; i < params.length; i++) {
-            let a = (params[i].toString().replaceAll('-', '_'));
+            let a = (params[i].toString().replace('-', '_'));
             newArray.push(a);
         }
         document.write('Mảng sau khi kiểm tra: ' + newArray);
     }
-    let input = prompt('Nhập kí tự vào đây');
     changeWord([input]);
 </script>
 </body>
