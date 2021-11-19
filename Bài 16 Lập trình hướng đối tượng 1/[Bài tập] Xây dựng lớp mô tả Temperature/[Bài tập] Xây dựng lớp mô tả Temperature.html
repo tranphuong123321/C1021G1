@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(doC) {
+            this.doC=doC
+        }
+        switchToF(){
+            document.write(9/5*this.doC+32+' doF'+'<br/>')
+        }
+        switchToK(){
+            document.write(this.doC+273.15+' doK'+'<br/>')
+        }
+    }
+    let Tem1=new Temperature(25)
+    Tem1.switchToF()
+    Tem1.switchToK()
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check_number(number)
+    {
+        if (number % 2 == 0){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    for(i=1;i<=5;i++){
+        if (check_number(i)){
+            document.write(i+' là số chẵn'+'<br/>')
+        }else {
+            document.write(i+' là số lẻ'+'<br/>')
+        }
+    }
+</script>
+</body>
+</html>
