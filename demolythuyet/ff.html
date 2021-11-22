@@ -23,7 +23,7 @@
             taBle+=`
             <tr>
             <td>${proDuct[i]}</td>
-            <td><button>Edit</button> <button>Delete</button></td>
+            <td><button onclick="edPro(${i})">Edit</button> <button onclick="delPro()">Delete</button></td>
 </tr>
             `;
         }
@@ -32,6 +32,17 @@
     loadData()
     function addPro() {
        proDuct.push(document.getElementById('1').value)
+        loadData()
+    }
+    function delPro(index) {
+        if(confirm(proDuct[index])){
+            proDuct.splice(index,1)
+            loadData()
+        }
+    }
+    function edPro(index) {
+        let newEdit = prompt('Nhập giá trị cần chỉnh sửa')
+        proDuct.splice(index,1,newEdit)
         loadData()
     }
 </script>
