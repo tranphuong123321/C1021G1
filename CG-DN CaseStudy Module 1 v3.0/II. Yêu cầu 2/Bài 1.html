@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let saLary=parseInt(prompt('hay nhap tien luong'))
+    if(saLary===15000000){
+        document.write('thue phai dong la 20%'+'<br/>')
+        document.write('tien duoc nhan thuc te la '+(saLary-saLary*0.2))
+    }else if ( saLary>=7000000){
+        document.write('thue phai dong la 10%'+'<br/>')
+        document.write('tien duoc nhan thuc te la '+(saLary-saLary*0.1))
+    }else {
+        document.write('thue phai dong la 5%'+'<br/>')
+        document.write('tien duoc nhan thuc te la '+(saLary-saLary*0.05))
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task</title>
+</head>
+<body>
+    <div>
+
+        <button onclick="convert()">Convert</button>
+        <p id ="showContent"></p>
+        <script>
+            let showContent = document.getElementById("showContent");
+            let arrConvert ;
+            let stringInput;
+            let tempArr;
+            let content = "";
+            function convert() {
+                arrConvert = [];
+                stringInput = prompt("input string");
+                convertString();
+                count();
+                showContent.innerHTML = content;
+            }
+            function convertString() {
+
+                let temp = stringInput.split(" ");
+                for(let i = 0;i<temp.length;i++){
+                    if(temp[i].trim().length>0){
+                        arrConvert.push(temp[i]);
+                    }
+                }
+                content += `${arrConvert.join(" ")} <br>`;
+                for(let i = 0;i<arrConvert.length;i++){
+                    arrConvert[i].toLowerCase();
+                    tempArr = arrConvert[i].split("");
+                    tempArr[0] = tempArr[0].toUpperCase();
+                    arrConvert[i] = tempArr.join("");
+                }
+                content += `${arrConvert.join(" ")} <br>`;
+
+            }
+            function count(){
+                let maxLength = 0;
+                for(let i = 0;i<arrConvert.length;i++){
+                    if(arrConvert[i].length>maxLength){
+                        maxLength = arrConvert[i].length;
+                    }
+
+                }
+                content += `maxLength is : ${maxLength} <br>`;
+            }
+        </script>
+    </div>
+</body>
+</html>

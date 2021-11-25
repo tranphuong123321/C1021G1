@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numeRators=[5,4,3];
+    let denomiNators=[2,1,3];
+    let max=numeRators[0]/denomiNators[0];
+    let index=0;
+    for(let i=1;i<numeRators.length;i++){
+        for (let j = 1; j < denomiNators.length; j++) {
+            if (numeRators[i] / denomiNators[j] > max) {
+                max = numeRators[i] / denomiNators[j];
+                index = i;
+            }
+        }
+    }
+    alert(numeRators[index] + "/" + denomiNators[index]+ " là phân số lớn nhất, có chỉ số là "+index);
+    
+
+</script>
+</body>
+</html>
