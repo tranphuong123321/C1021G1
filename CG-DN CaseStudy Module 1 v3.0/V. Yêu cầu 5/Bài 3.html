@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function createMatrix() {
+        let rowArr = parseInt(prompt('Enter the row number '));
+        let colArr = parseInt(prompt('Enter the col number'));
+        let maTrix = [];
+        for (let i = 0; i < colArr; i++) {
+            let row = [];
+            for (let j = 0; j < rowArr; j++) {
+                row[j] = parseInt(prompt('Enter the item at [' + i + '] [' + j + '] : '));
+            }
+            maTrix[i] = row;
+        }
+        return maTrix;
+    }
+
+    let maTrix1 = createMatrix();
+
+    function findMaxmin(matrix) {
+        let max = matrix[0][0];
+        let min = matrix[0][0];
+        for (let i = 0; i < matrix.length; i++) {
+            for (let j = 0; j < matrix[i].length; j++) {
+                if (max < matrix[i][j]) {
+                    max = matrix[i][j];
+                }
+                if (min > matrix[i][j]) {
+                    min = matrix[i][j];
+                }
+            }
+        }
+        console.table(matrix);
+        alert(" The max element is : " + max + ' \nThe min element is : ' + min);
+    }
+    findMaxmin(maTrix1);
+    </script>
+</body>
+</html>
